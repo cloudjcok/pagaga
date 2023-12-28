@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales</title>
+    <a href="index.html">PAGINA PRINCIPAL</a>
+    <link rel="stylesheet" href="animales.css">
+</head>
+
+<body>
+    <button id="mostrarAlerta">OMITIR NIVEL</button>
+    <audio autoplay>
+        <source src="Presentación animales  (1).mp3" type="audio/mpeg">
+        tu navegador no es compatible
+    </audio>
+
+    <h1>LOS ANIMALES</h1>
+    <h1>PULSA EN LA CAJA!!</h1>
+
+    <div class="caja">
+        <img src="https://img.freepik.com/vector-premium/caja-carton-signo-interrogacion-rojo-desempaqueta-paquete-desconocido_124715-2082.jpg?w=2000"
+            alt="Imagen" height="300px" id="miImagen" style="cursor: pointer;">
+    </div>
+
+    <div id="resp">
+        <h1>
+            AYUDA A JORGE!!
+            <hr> ¿QUE ANIMAL ESCUCHAS DENTRO DE LA CAJA?
+        </h1>
+    </div>
+    <br><br>
+
+    <div class="opcs1">
+        <img src="11189732_2297 (1).jpg" alt="perro" height="275px" id="Perro" onclick="verificarRespuesta(`perro`)"
+            style="cursor: pointer;">
+        <img src="IMG_7295.JPG" alt="leon" height="275px" id="Leon" onclick="verificarRespuesta(`leon`)"
+            style="cursor: pointer;">
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-gato-sentado-naturaleza-animal-icono-concepto-aislado-premium-plano_138676-6708.jpg?w=740&t=st=1702335056~exp=1702335656~hmac=1a96b558117b29a90672833cba17486b6ec364b87e2c7c4562ddfbf97bfc94dd"
+            alt="gato" height="275px" id="Gato" onclick="verificarRespuesta(`gato`)" style="cursor: pointer;">
+    </div>
+    /// El archivo de audio
+    <audio id="miSonido">
+        <source src="mixkit-medium-size-angry-dog-bark-54.wav" type="audio/mp3">
+    </audio>
+    <audio id="correcto">
+        <source src="Respuesta Correcta .mp3" type="audio/mp3">
+    </audio>
+    <audio id="incorrecto">
+        <source src="Respuesta Incorrecta .mp3" type="audio/mp3">
+    </audio>
+
+
+    
+    
+    
+    <script src="main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetAlert.js"></script>
+</body>
+</html>
